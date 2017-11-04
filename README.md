@@ -1,6 +1,6 @@
-# Android MiniLoggr
+# MiniLoggr for Android
 
-Android MiniLoggr is small utility class that extends standard android.util.Log with additional features.
+MiniLoggr for Android is small utility class that extends standard android.util.Log with additional features.
 
 This document is available in other languages: English, Srpski or Српски
 
@@ -68,8 +68,9 @@ public class ExampleClass {
 
 
 ## License
-#### Apache 2.0 License
+*  **Apache 2.0 License**
 [![License](https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
+*  **Android is a trademark of Google LLC.**
 
 ## Author
 
