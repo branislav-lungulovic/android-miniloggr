@@ -7,7 +7,7 @@ This document is available in other languages: English, Srpski or Српски
 ## Features
 
 Additional features in this logger implementation are:
-+ Tag name is automatically initiated with calling class name.
++ Tag name is automatically initialized with calling class name.
 + Debug messages will be generated only if the app is built using debug variant.  
   You don't have to check BuildConfig.DEBUG to exclude debug log statements, it is done automatically.
 + Added new overloaded log methods for creating more complex log messages.
