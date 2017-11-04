@@ -15,8 +15,10 @@ Additional features in this logger implementation are:
    You can enter unlimited number of arguments(objects and primitive types) and the logger will concatenate them in
    receiving order using StringBuilder internally.  
     
-   Example: logger.d("Numbers ", 3, " and ", 3.44f, " are not equal.(", true, ")") 
-
+   Example: 
+   ```java
+   logger.d("Numbers ", 3, " and ", 3.44f, " are not equal.(", true, ")") 
+    ```
 ## Install
 
 
