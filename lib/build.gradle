@@ -1,0 +1,60 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "26.0.2"
+    defaultConfig {        
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+	//needed for propagation of BuildConfig params from main app
+    defaultPublishConfig 'release'
+    publishNonDefault true
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    testCompile 'junit:junit:4.12'
+	testCompile "org.robolectric:robolectric:3.5.1"
+}
+
+ext {
+    bintrayRepo = 'android-miniloggr' //the maven repo name (created on bintray)
+    bintrayName = 'android-miniloggr' //the name you want to give at your project on bintray
+
+    publishedGroupId = 'info.androidminiloggr' //aaaa : the librairy group
+    artifact = 'lib' //BBBB : the library name
+    libraryVersion = "1.0.0" //the librairy version
+
+    //the library will be : aaaa:BBBB:version
+
+    libraryName = 'android-miniloggr'
+    libraryDescription = 'MiniLoggr for Android is small utility class that extends standard android.util.Log with additional features.'
+
+    siteUrl = 'https://github.com/branislav-lungulovic/android-miniloggr'
+    gitUrl = 'https://github.com/branislav-lungulovic/android-miniloggr.git'
+
+    developerId = 'branislav-lungulovic'
+    developerName = 'Branislav Lungulovic'
+    developerEmail = 'branislav.lungulovic@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
