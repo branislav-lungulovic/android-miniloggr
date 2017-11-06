@@ -2,7 +2,7 @@
 
 Android MiniLoggr je mala pomoćna biblioteka za logovanje poruka koja proširuje standardnu android.util.Log klasu.
 
-Dokument možete pročitati i na drugim jezicima: [English](README.md), [Srpski](README.sr-RS.md) ili [Српски](README.sr-RS.md)
+Dokument možete pročitati i na drugim jezicima: [English](README.md), [Srpski](README.sr-Latn-RS.md) ili [Српски](README.sr-RS.md)
 
 ## Funkcionalnosti
 

@@ -2,7 +2,7 @@
 
 MiniLoggr for Android is small utility class that extends standard android.util.Log with additional features.
 
-This document is available in other languages: [English](README.md), [Srpski](README.sr-RS.md) or [Српски](README.sr-RS.md)
+This document is available in other languages: [English](README.md), [Srpski](README.sr-Latn-RS.md) or [Српски](README.sr-RS.md)
 
 ## Features
 
