@@ -1,4 +1,4 @@
-# Android MiniLoggr
+# MiniLoggr za Android
 
 Android MiniLoggr je mala pomoćna biblioteka za logovanje poruka koja proširuje standardnu android.util.Log klasu.
 
